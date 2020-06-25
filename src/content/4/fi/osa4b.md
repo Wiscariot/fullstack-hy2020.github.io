@@ -245,6 +245,8 @@ module.exports = {
 
 ### Tietokannan alustaminen ennen testejä
 
+// DONE() - Materiaaleissa voisi olla jokin maininta ko. toiminnista, joka omalta osaltani ratkaisi sen ettei eräs testeistä sulkeutunut odotetusti. Voi olla että itseltäni toki jäi jotakin huomaamatta tai ymmärtämättä. Laitoin asiasta lisätietoa, ja avaan kohtaamaani ongelmaa mielelläni lisää, jos se on tarpeen
+
 Testaus vaikuttaa helpolta ja testit menevät läpi. Testimme ovat kuitenkin huonoja, niiden läpimeno riippuu tietokannan tilasta (joka sattuu omassa testikannassani olemaan sopiva). Jotta saisimme robustimmat testit, tulee tietokannan tila nollata testien alussa ja sen jälkeen laittaa kantaan hallitusti testien tarvitsema data.
 
 Testimme käyttää jo jestin metodia [afterAll](https://facebook.github.io/jest/docs/en/api.html#afterallfn-timeout) sulkemaan tietokannan testien suoritusten jälkeen. Jest tarjoaa joukon muitakin [funktioita](https://facebook.github.io/jest/docs/en/setup-teardown.html#content), joiden avulla voidaan suorittaa operaatioita ennen yhdenkään testin suorittamista tai ennen jokaisen testin suoritusta.
